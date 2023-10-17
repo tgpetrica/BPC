@@ -94,12 +94,14 @@ Tripletul (P,A,Q) reprezinta un algoritm corect daca datele de intrare satisfac 
 
 ## Reguli pentru verificarea corectitudinii
 #### Prelucrari secventiale
+```txt
 Daca
 	Preconditiile implica asertiunea initiala
 	Fiecare actiune implica asertiunea urmatoare
 	Asertiunea finala implica postconditiile
 Atunci
 	secventa de prelucrari este corecta
+```
 #### Prelucrari de decizie
 #### Prelucrari repetitive
 
