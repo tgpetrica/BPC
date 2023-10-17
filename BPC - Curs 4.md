@@ -1,19 +1,18 @@
-
-### Analiza algoritmilor
+## Analiza algoritmilor
 - **Corectitudinea**: se analizeaza daca algoritmul produce rezultatul dorit dupa efectuarea unui numar finit de operatii
 - **Eficienta**: se estimeaza volumul de resurse (memorie, timp) necesare pentru executia algoritmului
 
-### Verificarea corectitudinii
+## Verificarea corectitudinii
 - **Experimentala (prin testare)**: algoritmul este executat pentru un set de insatnte ale datelor de intrare
 - **Formala (prin demonstrare)**: se demonstreaza ca algoritmul produce rezultatul corect pentru orice instante ale datelor de intrare
 
-### Avantaje si dezavantaje
+## Avantaje si dezavantaje
 |             |            Experimentala            |                               Formala                              |
 |:-----------:|:-----------------------------------:|:------------------------------------------------------------------:|
 |   Avantaje  | - simpla  - relativ usor de aplicat |                     - garanteaza corectitudinea                    |
 | Dezavantaje |    - nu garanteaza corectitudinea   | - destul de dificila - nu poate fi aplicata algoritmilor complecsi |
 
-### Notiuni de baza
+## Notiuni de baza
 - **Preconditii**: proprietati satisfacute de catre datele de intrare
 - **Postconditii**: proprietati satisfacute de catre datele de iesire
 - **Verificarea corectitudinii partiale**: se demonstreaza ca daca algoritmul se termina dupa un numar finit de prelucrari atunci conduce de la preconditii la postconditii
@@ -21,7 +20,7 @@
 Etape intermediare in verificarea corectitudinii:
 - analiza starii algoritmului
 - si a efectului pe care il are fiecare pas de prelucare asupra starii algoritmului
-#### Starea unui algoritm
+### Starea unui algoritm
 =  set de valori corespunzatoare variabilelor utilizare in cadrul algoritmului
 - de-a lungul executiei algoritmului starea acestuia se modifica intrucat variabilele isi schimba valorile
 - algoritmul poate fi considerat corect daca la sfarsitul executiei prelucrarilor starea lui implica postconditiile
@@ -41,7 +40,7 @@ solve (real a,b)
 
 Apel: `solve(a0,b0)`
 
-#### Asertiuni
+### Asertiuni
 = afirmatie adevarata privind starea algoritmului
 - sunt utilizate pentru a adnota algoritmii
 Adnotarea este utila in:
@@ -80,3 +79,28 @@ min (real a,b,c) // a≠b, b≠c, c≠a
 	RETURN m
 }
 ```
+## Etapele verificarii corectitudinii
+1. Identificam preconditiile si postconditiile
+2. adnotarea algoritmului cu asertiuni astfel incat:
+- preconditiile sa fie satisfacute
+- asertiunea finala sa implice postconditiile
+3. **se demonstreaza** ca fiecare pas de prelucrare asigura modifcarea starii algoritmului astfel incat asertiunea urmatoare sa fie adevarata.
+
+### Notatii
+- **P** = preconditii
+- **Q** = postconditii
+- **A** = algoritm
+Tripletul (P,A,Q) reprezinta un algoritm corect daca datele de intrare satisfac preconditiile (P), in urma parcurgerii algoritmului (A) sa rezulte postconditiile (Q).
+
+## Reguli pentru verificarea corectitudinii
+#### Prelucrari secventiale
+Daca
+	Preconditiile implica asertiunea initiala
+	Fiecare actiune implica asertiunea urmatoare
+	Asertiunea finala implica postconditiile
+Atunci
+	secventa de prelucrari este corecta
+#### Prelucrari de decizie
+#### Prelucrari repetitive
+
+
