@@ -102,7 +102,40 @@ Daca
 Atunci
 	secventa de prelucrari este corecta
 ```
+
+Exemplu:
+```pseudocode
+ {aux = NaN, x = a, y = b}
+aux = x
+ {x = a, y = b, aux = a}
+x = y
+ {x = b, y = b, aux = a}
+y = aux
+ {x = b, y = a, aux = a}
+```
+
+```pseudocode
+ {x = a, y = b}
+x = x + y
+ {x = a + b, y = b}
+y = x - y
+ {x = a + b, y = a}
+x = x - y
+ {x = b, y = a}
+```
+
+```pseudocode
+ {x = a, y = b}
+x = y
+ {x = b, y = b}
+y = x
+ {x = b, y = b}
+```
+
 #### Prelucrari de decizie
+```txt
+
+```
 #### Prelucrari repetitive
 
 
