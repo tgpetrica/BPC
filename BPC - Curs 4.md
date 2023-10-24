@@ -9,8 +9,8 @@
 ## Avantaje si dezavantaje
 |             |            Experimentala            |                               Formala                              |
 |:-----------:|:-----------------------------------:|:------------------------------------------------------------------:|
-|   Avantaje  | - simpla  - relativ usor de aplicat |                     - garanteaza corectitudinea                    |
-| Dezavantaje |    - nu garanteaza corectitudinea   | - destul de dificila - nu poate fi aplicata algoritmilor complecsi |
+|   Avantaje  | - simpla  <br>- relativ usor de aplicat |                     - garanteaza corectitudinea                    |
+| Dezavantaje |    - nu garanteaza corectitudinea   | - destul de dificila <br>- nu poate fi aplicata algoritmilor complecsi |
 
 ## Notiuni de baza
 - **Preconditii**: proprietati satisfacute de catre datele de intrare
